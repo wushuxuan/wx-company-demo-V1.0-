@@ -1,0 +1,64 @@
+<!--company/pages/SearchMore/SearchMore.wxml-->
+<view class="container">
+
+  <view class="top_nav">
+    <view class="left"><text>{{CarNumber}}</text></view>
+    <view class="right">
+          <view class="list">
+          <text class="name">违章</text>
+          <text class="value">{{count}}</text>
+        </view>
+        <view class="list">
+          <text class="name">罚款</text>
+          <text class="value">{{totalprice}}</text>
+        </view>
+        <view class="list">
+          <text class="name">扣分</text>
+          <text class="value">{{totalscore}}</text>
+        </view>
+    </view>
+  </view>
+
+
+
+
+  <view class="content">
+    <view class="header">
+      <view class="list">
+        <view class="flex-warp">
+          <text class="block">{{time}}</text>
+          <text class="block">扣<text class="red"> {{score}}</text>分</text>
+        </view>
+        <view class="flex-warp">
+          <text class="block">罚款</text>
+          <text class="block">￥<text class="red"> {{price}}</text></text>
+        </view>
+        <view class="flex-warp">
+          <text class="block">代办费用</text>
+          <text class="block">￥<text class="red"> {{handlefee}}</text></text>
+        </view>
+      </view>
+
+      <view class="decir">
+        <text>{{content}}</text>
+      </view>
+
+
+      <view class="footer">
+        <text>违章地址 ：{{address}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+  <view class="footer">
+    <view class="pay_bottom">
+            <view class="flex-wrap">
+            <text>待支付：<text class="num">{{price}}+{{handlefee}}</text></text>
+            </view>
+            <view class="button">
+              去办理
+            </view>
+    </view>
+  </view>

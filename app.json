@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/address/address",
+    "pages/carType/carType",
+    "pages/Renting/Renting",
+    "pages/service/service",
+    "pages/search/search",
+    "pages/appointment/appointment",
+    "pages/ShowCar/ShowCar",
+    "pages/appoint/appoint",
+    "pages/SearchMore/SearchMore",
+    "pages/endorsement/endorsement"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "上海嘀友租赁公司",
+    "navigationBarTextStyle":"white"
+  }
+}

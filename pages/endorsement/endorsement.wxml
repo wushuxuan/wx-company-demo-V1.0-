@@ -1,0 +1,64 @@
+<!--company/pages/endorsement/endorsement.wxml-->
+<view class="container">
+  <view class="nav">
+    <text>交警提醒您，您的车辆违章情况如下</text>
+  </view>
+
+
+  <view class="content">
+    <view class="flex-wrap">
+        <view class="title">
+          <text>{{CarNumber}}</text>
+        </view>
+        <view class="title_flex">
+          <view class="list">
+            <text class="name">违章次数</text>
+            <text class="value">{{count}}</text>
+          </view>
+          <view class="list">
+            <text class="name">罚款</text>
+            <text class="value">{{totalprice}}</text>
+          </view>
+          <view class="list">
+            <text class="name">扣分</text>
+            <text class="value">{{totalscore}}</text>
+          </view>
+          <view class="navigator">
+            <navigator url="../SearchMore/SearchMore?CarNumber={{CarNumber}}&totalprice={{totalprice}}&count={{count}}&totalscore={{totalscore}} &address={{address}}&content={{content}}&price={{price}}&score={{score}}&handlefee={{handlefee}}&time={{time}}">查看更多</navigator>
+          </view>
+        </view>
+    </view>
+    <view class="flex-wrap">
+    <view class="title">
+        <text>{{carNumber}}</text>
+      </view>
+      <view class="title_flex">
+        <view class="list">
+          <text class="name">违章次数</text>
+          <text class="value">{{Count}}</text>
+        </view>
+        <view class="list">
+          <text class="name">罚款</text>
+          <text class="value">{{Totalprice}}</text>
+        </view>
+        <view class="list">
+          <text class="name">扣分</text>
+          <text class="value">{{Totalscore}}</text>
+        </view>
+        <view class="navigator">
+          <navigator url="../SearchMore/SearchMore?CarNumber={{carNumber}}&totalprice={{Totalprice}}&count={{Count}}&totalscore={{Totalscore}} &address={{Address}}&content={{Content}}&price={{Price}}&score={{Score}}&handlefee={{Handlefee}}&time={{Time}}">查看更多</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="service_content">
+    <view wx:for="{{service}}" wx:key="service" class="service_list">
+      <view class="image">
+        <image src="{{item.image}}"></image>
+      </view>
+      <text class="title">{{item.title}}</text>
+      <text>{{item.decei}}</text>
+    </view>
+  </view>
+</view>

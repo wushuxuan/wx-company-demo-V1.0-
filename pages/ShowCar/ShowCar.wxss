@@ -1,0 +1,127 @@
+/* pages/ShowCar/ShowCar.wxss */
+.container{
+  width: 100%;
+  background: #f5f5f5;
+}
+swiper{
+  width: 100%;
+  height: 200px !important;
+}
+swiper image{
+  width:100%;
+}
+
+
+/*指示点*/
+.swipers{
+    width:100% !important;
+    position: relative;
+}
+.swiper-box {
+  width:100% !important;
+}
+.dots_three{
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  color:#fff;
+  background: #6b696e;
+  padding:5px 10px;
+}
+
+
+
+
+
+.appoint_nav{
+  width:100%;
+  background:#fff;
+  height:20%;
+  text-align: center;
+}
+.container .appoint_nav text{
+  display: inline-block;
+  width:30%;
+  height:40px;
+  line-height: 40px;
+  border-bottom: 4px solid #48c23d;
+}
+/*详情*/
+.content,.content .price_nav{
+  width: 100%;
+}
+.content .price_nav{
+  padding:10px;
+  border-bottom: 1px solid #eee;
+  background:#fff;
+}
+.content .price_nav .flex-wrap{
+  width: 90%;
+  margin-top:5px;
+}
+.content .price_nav .name{
+  font-weight: bold;
+}
+.content .price_nav .prices{
+  font-size:12px;
+  color:#888;
+  margin-top:15px;
+}
+.content .price_nav .prices .price{
+  font-weight: bold;
+  color:#fd521e;
+  font-size:14px;
+}
+.content .price_nav .prices .details{
+  padding-left:30px;
+}
+
+.content .content_details{
+  width:100%;
+  height:120px;
+  padding:5px 0px 10px;
+}
+.content .content_details .flex-wrap{
+  width:33.33%;
+  float: left;
+  background:#fff;
+  padding:10px 0px;
+}
+.content .content_details .flex-wrap text{
+  display:inline-block;
+  width:100%;
+  text-align: center;
+  margin-top:5px;
+  font-size:12px;
+}
+.content .content_details .flex-wrap .bold{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.show_images,.show_images .flex-wrap{
+  width: 100%;
+  background:#fff;
+}
+.show_images .flex-wrap image{
+  width: 100%;
+}
+
+/*底部*/
+.footer{
+  width:100%;
+  position: fixed;
+  bottom:0px;
+  background:#fd521e;
+}
+.footer .botton{
+  width:50%;
+  display: inline-block;
+  float: left;
+  padding:10px 0px;
+  text-align: center;
+  color:#fff;
+}
+.footer .back{
+  background: #fe9901;
+}

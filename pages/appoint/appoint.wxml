@@ -1,0 +1,62 @@
+<!--pages/appoint/appoint.wxml-->
+<view class="container">
+  <view class="appoint_nav">
+   <text>在线预约</text>
+  </view>
+
+  <view class="search_Content">
+     <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="flex-wrap">
+        <text>姓名</text><input placeholder="请填写您的姓名" class="input"  type="text" name="UserName" confirm-type="done" />
+      </view>
+      <view class="flex-wrap">
+        <text>手机号码</text><input placeholder="请填写常用手机" class="input"  type="text" name="Telnumber" confirm-type="done" />
+      </view>
+      <view class="Type">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" mode = selector class="renting_nav brand">
+          <text>选择车型</text>
+          <input name="CarType" value="{{array[index]}}" class='picker'>{{array[index]}}</input>
+        </picker>
+      </view>
+      <view class="flex-wrap">
+        <text>用车数量</text><input placeholder="请填写用车数量" class="input"  type="text" name="CarNumber" confirm-type="done" />
+      </view>
+
+      <view class="dates">
+        <view class="flex-wrap date">
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="date-text">
+             <text>取车时间</text>
+            </view>
+            <view class="date-input">
+              <input name="date" value="{{date}}" class='picker'>{{date}}</input>
+            </view>
+          </picker>
+        </view> 
+        <view class="flex-wrap date date_image">
+         <image src="{{toImage}}"></image>
+        </view> 
+        <view class="flex-wrap date">
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+            <view class="date-text">
+              <text>还车时间</text>
+            </view>
+            <view class="date-input">
+             <input name="date" value="{{date}}" class='picker'>{{date}}</input>
+            </view>
+          </picker>
+        </view>
+      </view>
+
+        
+      <button class="primy" form-type="submit">立即预约</button>
+
+      <view class="bottom_tip">
+       <text>请按找预约时间提车，超过预约时间3个小时视为放弃预约。</text>
+      
+        <text class="call">客服电话： 020-6557294</text>
+      
+      </view>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,50 @@
+<!--pages/ShowCar/ShowCar.wxml-->
+<view class="container">
+<!--轮播-->
+  <view class="swipers">
+    <swiper class="swiper-box" bindchange="swiperChange" circular="true" indicator-dots="{{is_dots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots_three">
+      <view class="dot">{{swiperCurrent+1}}/{{swiper_data_num}}</view>
+    </view>
+  </view>
+
+
+<!--详情-->
+<view wx:for="{{car_details}}" class="content">
+  <view class="price_nav">
+    <view class="flex-wrap name">{{title}}</view>
+    <view class="flex-wrap prices"><text class="price">{{item.price}}</text><text class="date"> /日</text> <text class="details">{{item.keyword}}</text></view>
+  </view>
+
+  <view class="content_details">
+    <view wx:for="{{detail}}" class="flex-wrap">
+      <text class="bold">{{item.key}}</text>
+      <text>{{item.word}}</text>
+    </view>
+  </view>
+
+
+<!--汽车图片列表-->
+  <view class="show_images">
+   <view class="appoint_nav">
+   <text>汽车详情</text>
+  </view>
+    <view wx:for="{{imgUrls}}" class="flex-wrap"><image src="{{item}}"></image></view>
+  </view>
+</view>
+
+
+
+<!--底部-->
+<view class="footer">
+  <navigator class="botton back" open-type="navigateBack" delta="1">返回列表</navigator>
+  <view bindtap="calling" class="botton">立即预约</view>
+</view>
+</view>

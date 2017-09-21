@@ -1,0 +1,106 @@
+/* pages/Renting/Renting.wxss */
+.container{
+  padding:0 !important;
+  background: #f5f5f5;
+}
+form{
+  width:100%;
+}
+.form_nav{
+  width:100%;
+  background: #fff;
+}
+.form_nav .renting_nav{
+  display: inline-block;
+  width: 49.8%;
+  padding:10px 0px;
+  border-bottom:1px solid #eee;
+  text-align: center
+}
+.form_nav .renting_nav .icon{
+  font-size:11px;
+  color: #333;
+}
+.form_nav .brand{
+  border-right: 1px solid #eee;
+}
+
+/*选择器显示区域*/
+.form_nav_select .picker{
+  width:100%;
+  padding:5px 10px;
+  font-size: 12px;
+  display: none;
+}
+
+/*车辆显示区域*/
+.content_list{
+  width:100%;
+}
+.content_list .flex-wrap{
+  width: 90%;
+  margin:0 auto;
+  background: #fff;
+  height:84px;
+  padding:5px 5px;
+  border-radius: 5px;
+  margin-top:8px;
+  box-shadow:0px 0px 5px #ddd;
+}
+.content_list .flex-wrap .text{
+  width:65%;
+  float: left;
+  padding-top:3px;
+}
+.content_list .flex-wrap .text text{
+  display: block;
+  font-size:12px;
+  padding:5px;
+}
+
+.content_list .flex-wrap .text text.carname{
+  font-weight: bold;
+  font-size:14px;
+}
+.content_list .flex-wrap .text .keyword{
+  color:#d8d8d8;
+}
+.content_list .flex-wrap .text .price{
+  color: #fd451a;
+  font-weight: bold;
+  font-size:14px;
+  display: inline-block;
+}
+.content_list .flex-wrap .text .date{
+  color:#000;
+  display: inline-block;
+}
+.content_list .flex-wrap .text .button{
+  border:1px solid  #48c23d;
+  padding:3px;
+  text-align: center;
+  border-radius: 5px;
+  color:#48c23d;
+  margin-left:5px;
+  display: inline-block;
+  font-size:9px;
+}
+.content_list .flex-wrap .text .blue{
+  border:1px solid #2b99ff;
+  color:#2b99ff;
+}
+
+.content_list .flex-wrap image{
+  display: inline-block;
+  width:30%;
+  height: 80px;
+  margin:2px 0px;
+  float: right;
+  border-radius: 5px;
+  margin-right:2%;
+}
+
+
+.navigator-hover {
+    background:#fff;
+}

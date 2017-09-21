@@ -1,0 +1,48 @@
+.container{
+  background:#eee;
+}
+.container .address_top_bg{
+  width: 100%;
+  height:170px;
+}
+.container .address_top_bg image{
+  width: 100%;
+  height:100%;
+}
+.container .address_content{
+  width:100%;
+  height:50px;
+}
+.container .address_content .address{
+  display: inline-block;
+  float: left;
+  width: 60%;
+  height:50px;
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  text-align: center;
+  background:#fff;
+}
+.container .address_content .call{
+  width:40%;
+  background: #48c23d;
+  color:#fff;
+}
+.container .map{
+  width: 100%;
+  margin-top: 2px;
+  background: #fff;
+}
+.map text{
+  display: inline-block;
+  margin-left:5%;
+  margin-bottom: 2px;
+  font-size:12px;
+  padding:10px 2px 5px;
+  border-bottom: 3px solid #48c23d;
+}
+.map map{
+  width: 100%;
+  height:250px;
+}

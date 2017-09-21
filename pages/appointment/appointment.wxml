@@ -1,0 +1,50 @@
+<!--pages/appointment/appointment.wxml-->
+<view class="container">
+
+  <!--顶部背景图片-->
+
+    
+  <view class="appoint_nav">
+   <text>租车须知</text>
+  </view>
+
+  
+  <view class="appoint_content">
+    <view class="flex-wrap">
+      <view class="title">企业租车</view>
+      <view class="tiao">
+        <view>1．营业执照副本，企业法人代码证，法人身份证，公章，委托书；</view>
+        <view>2．经办人：本市户口本，身份证。</view>
+      </view>
+    </view>
+
+    <view class="flex-wrap">
+      <view class="title">上海本地个人租车</view>
+      <view class="tiao">
+        <view>1．租车人本市户口本，身份证；</view>
+        <view>2．驾驶证（驾龄1年以上）；</view>
+        <view>3．外地户口需提供本市暂住证或居留证（3个月以上）并提供本市户口担保人一名；</view>
+        <view>4．担保人需提供本人户口本，身份证，担保承诺书。</view>
+      </view>
+    </view>
+
+
+    <view class="flex-wrap">
+      <view class="title">外籍人员租车</view>
+      <view class="tiao">
+        <view>1．租车人本人护照，本市居留证（1年以上），中国驾驶执照，本市户口担保人一名；</view>
+        <view>2．担保人需提供本人户口本，身份证，担保承诺书。</view>
+      </view>
+    </view>
+
+
+    <view class="flex-wrap">
+      <view class="title">备注：</view>
+      <view class="tiao">
+        <view>1．本公司所有租借车辆都配备驾驶员，若要自驾，则需提供车辆押金并以房产证作为抵押；</view>
+        <view>2．租金必须先付后用，若是支票支付，则需在到帐后方可提车；</view>
+        <view>3．对于长租车辆，承租人每月都需将车辆开到公司指定修理厂检修一次，否则发生车辆故障时，公司将不予承担修理费。</view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,38 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <view class="search_Topnav">
+    <text>所填信息为当地交管局查询所需，您的信息将严格保密</text>
+  </view>
+
+
+
+  <view class="search_Content">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="flex-wrap">
+        <text>车牌号码</text>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{Carnumber}}" mode = selector class="renting_nav brand"  name="picker">
+          <text class='picker' >{{Carnumber[index]}}</text>
+        </picker>
+        <input class="input small" placeholder="请输入车牌号" type="text" name="CarNumber" confirm-type="done" />
+      </view>
+      <view class="flex-wrap">
+        <text>发动机号</text><input placeholder="请输入完整发动机号" class="input"  type="text" name="Enginenumber" confirm-type="done" />
+      </view>
+      <view class="flex-wrap">
+        <text>车架号</text><input placeholder="请输入VIN车架号" class="input"  type="text" name="VINnumber" confirm-type="done" />
+      </view>
+      <view class="tip">
+       <text> 请输入附加信息（选填）</text>
+      </view>
+        
+      <button bindtap="save"  class="primy"  form-type="submit">保存并查询</button>
+
+      <view class="bottom_tip">
+       <text>记录油耗只需车牌，车型即可，若需要查询违章记录请输入车牌，发动机及车架号。</text>
+      </view>
+    </form>
+
+
+ 
+  </view>
+</view>

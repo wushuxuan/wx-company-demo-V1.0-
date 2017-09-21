@@ -1,0 +1,36 @@
+<!--pages/carType/carType.wxml-->
+<!--pages/Renting/Renting.wxml-->
+
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="form_nav">
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" mode = selector class="renting_nav brand">车型 <text class='icon'>▼</text></picker>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{price}}" mode = selector class="renting_nav price">价格 <text class='icon'>▼</text></picker>
+    </view>
+    <view class="form_nav_select">
+     <view class="section">
+          <view class="picker">
+            当前选择：{{array[index]}}
+          </view>
+      </view>
+    </view>
+  </form>
+
+  <!--列表-->
+
+  <scroll-view scroll-y="true" class="content_list">
+    <view wx:for="{{showcar}}"  class="flex-wrap">
+      <navigator url="../ShowCar/ShowCar?name={{item.name}}" class="text">
+        <text class="carname">{{item.name}}</text>
+        <text class="keyword">{{item.keyword}}</text>
+        <text class="price">{{item.price}} <text class="date">/ 日</text></text>
+        <text class="button">{{item.button}}</text>
+        <text class="button blue">{{item.button2}}</text>
+      </navigator>
+      <image src="{{item.image}}"></image>
+    </view>
+  </scroll-view>
+
+
+  
+</view>

@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class="container">
+
+ <view class="car_top">
+  <!--顶部背景图片-->
+    <view class="car_top_bg">
+      <image src="{{top_bg_imag}}" mode="bottom"></image>
+    </view>
+
+
+
+     <!--卡片-->
+    <view class="car_top_nav">
+      <view class="nav">
+        <view class="flex-wrap name">公司信息</view>
+        <navigator url="{{appoint}}" class="flex-wrap call">立即预约</navigator>
+      </view>
+       <!--卡片列表-->
+      <view class="nav_list">
+        <navigator wx:for="{{cardNav}}" url="{{item.address}}" class="flex-wrap">
+         <view class="imagebox">
+          <image src="{{item.image}}"></image>
+          </view>
+          <text>{{item.text}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+
+
+   <!--车型展示-->
+  <view class="showcar">
+    <view class="showcar_title"><text class="icon">▌</text><text class="text">车型展示</text><navigator url="../carType/carType" class="more">查看更多>></navigator></view>
+    <view class="showcar_list">
+       <navigator wx:for="{{carType}}" url="{{url}}" class="flex-wrap">
+         <view class="imagebox">
+          <image src="{{item.image}}"></image>
+          </view>
+          <text>{{item.name}}</text>
+        </navigator>
+    </view>
+  </view>
+
+
+
+
+
+
+     <!--待租车辆-->
+  <view class="showcar">
+    <view class="renting_title"><text class="icon">▌</text><text class="text">待租车辆</text><navigator url="{{renting}}" class="more">查看更多>></navigator></view>
+    <view class="renting">
+       <view wx:for="{{showcar}}" class="flex-wrap">
+         <view class="imagebox">
+          <image src="{{item.image}}"></image>
+          </view>
+          <view class="text">
+            <text class="text">{{item.name}}</text>
+            <text class="text"><text class="money">{{item.price}}</text> <text class="day">/日</text></text>
+            <navigator url="../ShowCar/ShowCar?name={{item.name}}" class="button">{{item.text}}</navigator>
+          </view>
+        </view>
+      
+
+
+        <!--更多服务敬请期待-->
+        <text class="bottom_more">---- 更多服务 敬请期待 ----</text>
+          <!--广告-->
+          <view class="guanggao">
+          <image src="{{logo}}"></image>
+            <!--<text>定制专属您的微信小程序</text>
+            <text class="gongsi">上海嘀友网络科技有限公司</text>-->
+          </view>
+            
+    
+    </view>
+  </view>
+   
+
+</view>
+

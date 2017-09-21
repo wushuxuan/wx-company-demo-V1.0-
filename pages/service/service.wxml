@@ -1,0 +1,16 @@
+<!--pages/service/service.wxml-->
+<view class="container">
+   <view class="appoint_nav">
+   <text>公司服务</text>
+  </view>
+
+  <view class="service_content">
+    <view wx:for="{{ServiceList}}" class="flex-wrap">
+      <text class="title">{{item.title}}</text>
+      <image src="{{item.image}}"></image>
+      <text class="notice">{{item.notice}}</text>
+      <text bindtap="calling" class="button">{{item.button}}</text>
+    </view>
+  </view>
+</view>
+
